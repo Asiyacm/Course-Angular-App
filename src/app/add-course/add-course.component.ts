@@ -25,27 +25,27 @@ constructor(private api:ApiService){}
 console.log(data)
 
 this.api.addCourse(data).subscribe(
-(response:any)=>{
-
-  console.log(response)
-  if(response.status=="success") {
-    alert("Add Course Successfully")
-    this.courseTitle=""
-    this.courseDescription=""
-    this.courseDuration=""
-    this.courseDate=""
-    this.courseVenue=""
-    
-  } else {
-    
-    alert("Something Went Wrong")
+  (response:any)=>{
+  
+    console.log(response)
+    if(response.status=="success") {
+      alert("Add Course Successfully")
+      this.courseTitle=""
+      this.courseDescription=""
+      this.courseDuration=""
+      this.courseDate=""
+      this.courseVenue=""
+      
+    } else {
+      
+      alert("Something Went Wrong")
+    }
   }
-}
-
-
-)
-
-}
+  
+  
+  )
+  
+  }
 
 
 
